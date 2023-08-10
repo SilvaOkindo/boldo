@@ -1,0 +1,173 @@
+header {
+  background-color: #0A2640;
+  color: white;
+  max-height: 100vh;
+  background-image: url(/public/bg.png);
+  background-repeat: no-repeat;
+  background-position-x: 900px;
+  background-position-y: -100px;
+  background-attachment: local;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo__symbol {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.logo__symbol > div {
+  background-color: var(--green-clr);
+}
+
+.logo__symbol > div:last-child {
+  height: 17px;
+  width: 25px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.logo__symbol > div:first-child {
+  height: 10px;
+  width: 16px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.logo__title {
+  font-weight: 600;
+  font-size: 2.1rem;
+}
+
+
+.nav__items {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    gap: 1.8rem;
+    align-items: center;
+}
+
+
+.nav__left {
+    display: flex;
+    align-items: center;
+}
+
+.open__menu {
+    display: none;
+}
+
+.close__menu {
+    display: none;
+}
+
+.nav__item {
+    transition: var(--transition);
+    color: white;
+}
+
+.nav__item:hover {
+    color: var(--green-clr);
+}
+
+.nav__btn {
+    color: var(--light-blue);
+    background-color: white;
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+
+.nav__btn:hover {
+    background-color: var(--light-blue);
+    color: white;
+    box-shadow: 0 10px 20px var(--light-blue);
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* /* /* 2xl */
+@media ( max-width: 1536px) {
+
+  
+}
+
+
+/* xl */
+@media ( max-width: 1280px) {
+  
+    header {
+        background-position-x: 600px;
+    }
+
+}
+
+
+
+/* lg*/
+@media ( max-width: 1024px) {
+
+    header {
+        background-image: none;
+    }
+    .nav__items {
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 5rem;
+        width: 100%;
+        background-color: var(--light-blue);
+        height: 100vh;
+        display: none;
+        
+    }
+
+    .nav__item {
+        height: 200px;
+    }
+
+    .open__menu {
+        display: block;
+        font-size: var(--size-2xl);
+        font-weight: 600;
+    }
+
+}
+
+/* md */
+/* @media ( max-width: 768px) {
+  
+} */
+
+
+
+/* sm */
+@media ( max-width: 640px) {
+      .logo {
+        font-size: 1.8rem;
+      }
+}
+
+
+/* xs */
+/* @media ( max-width: 475px) {
+   
+} */ 
+

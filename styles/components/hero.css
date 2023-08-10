@@ -1,0 +1,152 @@
+.section__hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero__title {
+    font-size: var(--size-5xl);
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.hero__description {
+    font-size: var(--size-sm);
+}
+
+
+
+.hero__cta-btns {
+    display: flex;
+    align-items: center;
+    gap: var(--size-5xl);
+}
+
+.hero__cta-btns > button {
+    padding: .6rem 2rem;
+    font-size: var(--size-sm);
+    transition: all 800ms ease;
+}
+
+.hero__cta-btns > button:first-child {
+    background-color: var(--green-clr);
+    color: var(--light-blue);
+    border: 1px solid transparent;
+}
+
+.hero__cta-btns > button:last-child {
+    border: 1px solid white;
+    color: white;
+}
+
+.hero__cta-btns > button:first-child:hover {
+    background-color: transparent;
+    border-color: var(--green-clr);
+    color: var(--green-clr);
+}
+
+.hero__cta-btns > button:last-child:hover {
+    background-color: white;
+    color: var(--light-blue);
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: .4;
+}
+
+
+
+
+/* 2xl
+@media ( max-width: 1536px) {
+ 
+}
+
+
+/* xl */
+/* @media ( max-width: 1280px) {
+  
+
+} */
+
+
+
+/* lg*/
+@media ( max-width: 1024px) {
+    .section__hero {
+        flex-direction: column;
+        gap: 4rem;
+       
+    }
+
+    /* .hero__image {
+        align-self: center;
+    } */
+
+    .logos {
+        display: none;
+    }
+
+    .hero__image {
+        width: 100%;
+        margin-bottom: var(--size-lg);
+    }
+
+    .hero__text {
+        width: 100%;
+    }
+}
+
+/* md */
+/* @media ( max-width: 768px) {
+  
+} */
+
+
+
+/* sm */
+@media ( max-width: 640px) {
+    .section__hero {
+        align-items: start;
+    }
+
+    .hero__title {
+        width: 100%;
+        font-size: var(--size-4xl);
+    }
+    .hero__description {
+        font-size: var(--size-xs);
+    }
+}
+
+
+/* xs */
+
+ @media ( max-width: 475px) {
+    .hero__title {
+        width: 100%;
+        font-size: var(--size-3xl);
+    }
+    .hero__description {
+        font-size: var(--size-xxs);
+    }
+
+    .hero__cta-btns {
+        gap: var(--size-3xl);
+    }
+
+    .hero__cta-btns > button {
+        padding: .6rem 1rem;
+        font-size: var(--size-xs);
+    }
+
+} 

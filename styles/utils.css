@@ -41,7 +41,7 @@
 
 
 .container {
-    /* max-width: 1536px; */
+    max-width: 1536px;
     width: 84%;
     margin-left: auto;
     margin-right: auto;
@@ -50,7 +50,7 @@
     /* border: 2px solid red; */
 }
 
-
+/* 
 .btn {
     background-color: var(--clr-yellow);
     padding: .3rem 1.5rem;
@@ -67,16 +67,12 @@
     background-color: transparent;
     border-color: var(--clr-yellow);
     color: var(--clr-yellow);
-}
+} */
 
-.row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 
 .section {
-    margin-top: 7rem;
+    margin-top: 3rem;
 }
 
 
