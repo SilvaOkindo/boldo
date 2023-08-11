@@ -1,10 +1,10 @@
 header {
   background-color: #0A2640;
   color: white;
-  max-height: 100vh;
+  height: 100vh;
   background-image: url(/public/bg.png);
   background-repeat: no-repeat;
-  background-position-x: 900px;
+  background-position-x: 800px;
   background-position-y: -100px;
   background-attachment: local;
 }

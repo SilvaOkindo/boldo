@@ -1,0 +1,154 @@
+.section__testimonial {
+    height: 80vh;
+    background-color: var(--light-blue);
+    color: white;
+}
+
+.section__testimonial.section {
+    margin-top: 10rem;
+}
+
+
+.testimonial__title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4rem;
+}
+
+.testimonials {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+
+.arrow__btns {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.arrow__btns span {
+    background-color: white;
+    color: black;
+    font-size: var(--size-2xl);
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    transition: all 400ms ease;
+}
+
+.arrow__btns span .fi {
+    display: flex;
+}
+
+.arrow__btns span:hover {
+    color: white;
+    border-color: white;
+    background-color: transparent;
+    transform: scale(1.2);
+
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgb(248, 248, 248);
+    color: black;
+    width: 300px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: all 400ms ease;
+}
+
+
+.testimonial:hover {
+    color: white;
+    border-color: white;
+    background-color: transparent;
+    transform: scale(1.05);
+}
+
+.testimonial__description {
+    font-size: var(--size-base);
+    line-height: 1.5;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.name {
+    font-size: var(--size-sm);
+}
+
+.occupation {
+    font-size: var(--size-xs);
+}
+
+
+ 
+
+/* 2xl
+@media ( max-width: 1536px) {
+ 
+}
+
+
+/* xl */
+@media ( max-width: 1280px) {
+  
+    .name {
+        font-size: 11px;
+    }
+    
+    .occupation {
+        font-size: var(--size-xs);
+    }
+}
+
+
+
+/* lg*/
+@media ( max-width: 1024px) {
+    .testimonials {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .arrow__btns {
+        display: none;
+    }
+}
+
+/* md */
+/* @media ( max-width: 768px) {
+  
+} */
+
+
+
+/* sm */
+@media ( max-width: 640px) {
+      .testimonial__ {
+        font-size: var(--size-sm);
+      }
+}
+
+
+/* xs */
+ @media ( max-width: 475px) {
+   .testimonial__title .service-3__title {
+    font-size: var(--size-sm);
+   }
+} 
+
