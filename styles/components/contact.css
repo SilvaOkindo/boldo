@@ -1,12 +1,12 @@
 .contact__section {
     margin-top: 10rem;
-    height: 40vh;
     background-color: var(--light-blue);
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    padding: 3rem 0;
 }
 
 .contact__title {
@@ -64,10 +64,7 @@
 
 /* lg*/
 @media ( max-width: 1024px) {
-    .contact__section {
-        height: 20vh;
-      }
-
+    
 }
 
 /* md */

@@ -1,0 +1,48 @@
+.about__hero {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.about__title {
+    font-size: var(--size-6xl);
+    line-height: 1.2;
+}
+
+.about__gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    width: 60%;
+}
+
+
+.item-1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.item-2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.item-3 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+
+}
+
+.item-4 {
+    grid-column-start: 1;
+
+
+}
+
+.item-5 {
+    grid-column-start: 3;
+}
+
+.about__gallery img {
+    width: 80%;
+}

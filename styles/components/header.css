@@ -1,7 +1,7 @@
 header {
   background-color: #0A2640;
   color: white;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(/public/bg.png);
   background-repeat: no-repeat;
   background-position-x: 800px;
@@ -68,7 +68,7 @@ nav {
 }
 
 .open__menu {
-    display: none;
+  display: none;
 }
 
 .close__menu {
@@ -104,10 +104,10 @@ nav {
 
 
 /* /* /* 2xl */
-@media ( max-width: 1536px) {
+/* @media ( max-width: 1536px) {
 
   
-}
+} */
 
 
 /* xl */
@@ -125,36 +125,51 @@ nav {
 @media ( max-width: 1024px) {
 
     header {
-        background-image: none;
+      background-position-x: 400px;
     }
     .nav__items {
         flex-direction: column;
         position: absolute;
         right: 0;
-        top: 5rem;
-        width: 100%;
-        background-color: var(--light-blue);
-        height: 100vh;
+        top: 3rem;
+        width: 300px;
+        height: 80vh;
         display: none;
-        
+        transition: all 800ms ease;
+        background-color: rgb(30, 30, 43);
+        gap: 0rem;
     }
 
     .nav__item {
-        height: 200px;
+      width: 300px;
+      display: grid;
+      place-content: center;
+      border-bottom: 1px solid var(--light-blue);
+      padding: 1rem 0;
     }
+
+    .nav__btn {
+      padding: .5rem 3rem;
+    }
+
+   
 
     .open__menu {
         display: block;
         font-size: var(--size-2xl);
         font-weight: 600;
+        cursor: pointer;
     }
+
 
 }
 
 /* md */
-/* @media ( max-width: 768px) {
-  
-} */
+@media ( max-width: 768px) {
+  header {
+    background-position-x: 300px;
+}
+}
 
 
 
@@ -163,11 +178,20 @@ nav {
       .logo {
         font-size: 1.8rem;
       }
+
+      header {
+        background-position-x: 200px;
+    }
 }
 
 
 /* xs */
-/* @media ( max-width: 475px) {
+
+@media ( max-width: 475px) {
    
-} */ 
+  header {
+    background-position-x: 150px;
+}
+} 
+
 
