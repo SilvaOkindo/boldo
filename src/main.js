@@ -28,6 +28,7 @@ const grid = document.querySelector('.grid')
 
 const openMenuBtn = document.querySelector('.open__menu');
 const menu = document.querySelector('.nav__items');
+const menuItem = document.querySelector('.nav__item');
 const closeMenuBtn = document.querySelector('.close__menu');
 
 
@@ -39,16 +40,17 @@ closeMenuBtn.addEventListener('click', closeMenu);
 // functions
 
 function openMenu() {
-    menu.style.display = 'flex';
+    menu.style.right = '0';
     closeMenuBtn.style.display = 'block';
     openMenuBtn.style.display = 'none';
+    menuItem.classList.add('animate');
 }
 
 function closeMenu() {
-    menu.style.display = 'none';
+    menu.style.right = '-100%';
     closeMenuBtn.style.display = 'none';
     openMenuBtn.style.display = 'block';
-
+    menuItem.classList.remove('animate')
 }
 
 // masonry grid

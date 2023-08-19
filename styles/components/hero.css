@@ -145,7 +145,7 @@
     }
 
     .hero__cta-btns > button {
-        padding: .6rem 1rem;
+        padding: .5rem 1.8rem;
         font-size: var(--size-xs);
     }
 

@@ -1,6 +1,7 @@
 .section__testimonial {
     background-color: var(--light-blue);
     color: white;
+    padding: 2rem;
 }
 
 .section__testimonial.section {

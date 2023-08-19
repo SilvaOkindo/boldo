@@ -59,12 +59,15 @@ nav {
     list-style: none;
     gap: 1.8rem;
     align-items: center;
+
+
 }
 
 
 .nav__left {
     display: flex;
     align-items: center;
+    transition: all 2s ease;
 }
 
 .open__menu {
@@ -73,6 +76,7 @@ nav {
 
 .close__menu {
     display: none;
+    cursor: pointer;
 }
 
 .nav__item {
@@ -130,26 +134,56 @@ nav {
     .nav__items {
         flex-direction: column;
         position: absolute;
-        right: 0;
+        right: -250px;
         top: 3rem;
-        width: 300px;
+        width: 250px;
         height: 80vh;
-        display: none;
-        transition: all 800ms ease;
         background-color: rgb(30, 30, 43);
         gap: 0rem;
+        transition: all 800ms ease;
     }
 
     .nav__item {
-      width: 300px;
+      width: 250px;
       display: grid;
       place-content: center;
       border-bottom: 1px solid var(--light-blue);
       padding: 1rem 0;
     }
 
+/* 
+   ul > li:nth-child(1) {
+    background-color: blue;
+   }
+
+   ul > li:nth-child(2) {
+    background-color: rgb(164, 164, 175);
+   }
+
+   ul > li:nth-child(3) {
+    background-color: blue;
+    animation-delay: 1s;
+   } */
+
+
+/* 
+    .animate {
+      animation: animateNav 800ms ease 200ms forwards;
+    } */
+
     .nav__btn {
       padding: .5rem 3rem;
+    }
+
+
+    @keyframes animateNav {
+      0% {
+        transform: rotate(45deg);
+      }
+
+      100% {
+        transform: rotate(0deg);
+      }
     }
 
    
@@ -167,7 +201,7 @@ nav {
 /* md */
 @media ( max-width: 768px) {
   header {
-    background-position-x: 300px;
+    background-image: none;
 }
 }
 
